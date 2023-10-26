@@ -1,0 +1,51 @@
+.radioGrp {
+  font-weight: 600;
+}
+.radioGrp label {
+  font-size: 12px;
+}
+.navigateWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.chartBoundary {
+  padding: 8px 14px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.avatar {
+  cursor: pointer;
+  border-radius: 4px;
+  background: #fafafa;
+  box-shadow: 0px 0.63457px 1.90372px 0px rgba(18, 18, 18, 0.1),
+    0px 0px 0px 0.63457px rgba(18, 18, 18, 0.1),
+    0px 0.63457px 0.63457px 0px rgba(18, 18, 18, 0.2);
+}
+.avatar {
+  color: black;
+}
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+.chartBoundary thead th {
+  background-color: #fff !important;
+  color: rgba(28, 28, 28, 0.4) !important;
+}
+
+.chartBoundary span[disabled] {
+  display: none;
+}

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+  font-family: inter;
+}
 .App {
   text-align: center;
 }
@@ -6,7 +10,25 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.ant-radio-button-wrapper.ant-radio-button-wrapper-checked {
+  background-color: #f9fafb !important;
+  color: black !important;
+  border-color: #d0d5dd !important;
+}
+.ant-radio-button-wrapper.ant-radio-button-wrapper-checked::before {
+  background-color: transparent !important;
+}
+.ant-pagination-item.ant-pagination-item-active {
+  border-color: transparent !important;
+  background-color: #f9fafb;
+}
+.ant-pagination-item.ant-pagination-item-active a {
+  color: #182230 !important;
+}
+.ant-pagination-item {
+  color: #475467 !important;
+  border-radius: 50% !important;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
