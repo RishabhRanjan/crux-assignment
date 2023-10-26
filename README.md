@@ -1,46 +1,72 @@
-# Getting Started with Create React App
+# CSV Data Visualistion using OpenAI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Description](#description)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [API Documentation](#api-documentation)
+- [Built With](#built-with)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+A full-stack project designed to allow users to create informative data visualizations from CSV data. It leverages a large language model to analyze the CSV data and generate graph configurations based on user-provided questions. This web application is built with React (TypeScript) on the frontend and Spring Boot on the backend.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **User-Friendly Interface**: Provides an intuitive user interface following the Figma design.
+- **CSV Upload**: Allows users to upload CSV files with data they want to visualize.
+- **Question Input**: Enables users to enter questions that describe what insights they seek from the data.
+- **Graph Visualization**: Generates and displays graphs based on the CSV data and user questions.
+- **Feedback**: Add feedbacks to the graphs generated.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+Before you get started, ensure you have the following prerequisites installed:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Node.js](https://nodejs.org/) - JavaScript runtime for the frontend.
+- [npm](https://www.npmjs.com/) - Node Package Manager.
+- [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) - For running the Spring Boot backend.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Backend Url - https://github.com/RishabhRanjan/data-visualisation-spring-backend
+Follow these steps to set up the project on your local machine:
 
-### `npm run eject`
+1. Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   ```bash
+   git clone https://github.com/RishabhRanjan/csv-data-visualistation-openai.git
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install frontend dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+ cd frontend
+ npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Usage
 
-## Learn More
+To use the application:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Start the spring boot backend
+2. Start the React frontend.
+3. Open your web browser and navigate to the application.
+4. Upload a CSV file and input a question to generate insightful graphs.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Built With
+
+This project was built using the following technologies and tools:s
+
+- [React (TypeScript)](https://reactjs.org/) - The frontend library.
+- [Ant Design](https://ant.design/) - The UI library.
+- [Spring Boot](https://spring.io/projects/spring-boot) - The backend framework.
+- [OpenAI GPT-4](https://openai.com/gpt-4) - The language model for generating graph configurations.

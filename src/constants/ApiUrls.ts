@@ -6,7 +6,7 @@ const ApiEndpoint = {
   newChat: `${baseUrl}/new-chat`,
   feedback: `${baseUrl}/feedback`,
   getHistory: `${baseUrl}/history`,
-  deleteChat: `${baseUrl}/delet-chat`,
+  deleteChat: `${baseUrl}/delete-chat`,
   getChats: `${baseUrl}/chats`,
 };
 

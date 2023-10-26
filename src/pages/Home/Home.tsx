@@ -105,13 +105,14 @@ export default function Home() {
   }
 
   function deleteChat(id: string) {
-    fetch(`${ApiEndpoint.deleteChat}?cid=${id}`).then(() =>
+    fetch(`${ApiEndpoint.deleteChat}?cid=${id}`).then(() => {
+      openNotification("success", "Chat deleted successfully", "");
       fetchChats((data) => {
         setChatItems(data);
         setSelectedChat({ id: "-1" });
         setChatDetails({} as IChatList);
-      })
-    );
+      });
+    });
   }
 
   function fetchChats(onSuccess: (e: IChatMenu[]) => void) {
@@ -213,7 +214,7 @@ export default function Home() {
             fetchChats((data) => setChatItems(data));
             setSelectedChat(res);
             fetchHistory(res.id);
-            openNotification("success", "CSV upload successfull", "");
+            openNotification("success", "CSV uploaded successfully", "");
           }}
           onError={(error) =>
             openNotification("error", "Unable to generate chat", error)
